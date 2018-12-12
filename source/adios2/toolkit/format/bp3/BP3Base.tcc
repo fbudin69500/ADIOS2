@@ -33,7 +33,7 @@ int8_t BP3Base::GetDataType<std::string>() const noexcept
 template <>
 int8_t BP3Base::GetDataType<char>() const noexcept
 {
-    const int8_t type = static_cast<int8_t>(type_byte);
+    const int8_t type = static_cast<int8_t>(type_char);
     return type;
 }
 

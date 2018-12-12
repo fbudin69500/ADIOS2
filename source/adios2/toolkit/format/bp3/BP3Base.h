@@ -338,6 +338,7 @@ protected:
         type_short = 1,    //!< type_short
         type_integer = 2,  //!< type_integer
         type_long = 4,     //!< type_long
+        type_char = 8,     //!< type_char
 
         type_unsigned_byte = 50,    //!< type_unsigned_byte
         type_unsigned_short = 51,   //!< type_unsigned_short

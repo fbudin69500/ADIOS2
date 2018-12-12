@@ -171,6 +171,12 @@ void BP3Deserializer::ParseVariablesIndex(const BufferSTL &bufferSTL,
             break;
         }
 
+        case (type_char):
+        {
+            DefineVariableInIO<char>(header, io, buffer, position);
+            break;
+        }
+
         case (type_byte):
         {
             DefineVariableInIO<signed char>(header, io, buffer, position);
@@ -343,6 +349,12 @@ void BP3Deserializer::ParseAttributesIndex(const BufferSTL &bufferSTL,
         case (type_string_array):
         {
             DefineAttributeInIO<std::string>(header, io, buffer, position);
+            break;
+        }
+
+        case (type_char):
+        {
+            DefineAttributeInIO<char>(header, io, buffer, position);
             break;
         }
 
